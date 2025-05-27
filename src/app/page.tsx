@@ -6,6 +6,7 @@ export default function Home() {
     <div> 
       <h1>Home Page</h1>
       <hr />
+      <AppWelcome headTitle="Whats up man" isShow={true} />
       <AppWelcome />
       <AppWelcome />
       <AppWelcome />
