@@ -1,4 +1,4 @@
-import App from "next/app";
+
 import AppWelcome from "./components/AppWelcome";
 
 export default function Home() {
