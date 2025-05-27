@@ -1,4 +1,5 @@
 'use client'
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 type AppWelcomeProps = {
@@ -17,12 +18,13 @@ export default function AppWelcome({ headTitle, isShow }: AppWelcomeProps) {
     return (
         <>
         <h1>{headTitle}</h1>
+        <p>{process.env.NEXT_PUBLIC_APP_NAME}</p>
         <p>{title.toLocaleUpperCase()}</p>
 
         {/* <button>className="bg-blue-700 p-3 m-3 text white") {
         }</button> */}
-
-        ,<button className="bg-blue-700 p-3 m-3 text-white rounded-lg"onClick={handleClick}>กดได้เลยจ้า</button>
+        <Button onClick={handleClick}>คลิกนี่สิ</Button>
+        {/* ,<button className="bg-blue-700 p-3 m-3 text-white rounded-lg"onClick={handleClick}>กดได้เลยจ้า</button> */}
         {currentYear}
         {
             isShow && <p>Date: 01/08/1994</p>
