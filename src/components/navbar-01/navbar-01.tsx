@@ -15,9 +15,9 @@ const Navbar01Page = () => {
 
           <div className="flex items-center gap-3">
             <Button variant="outline" className="hidden sm:inline-flex">
-              Sign In
+              เข้าสู่ระบบ
             </Button>
-            <Button>Get Started</Button>
+            <Button>สมัครสมาชิก</Button>
 
             {/* Mobile Menu */}
             <div className="md:hidden">
